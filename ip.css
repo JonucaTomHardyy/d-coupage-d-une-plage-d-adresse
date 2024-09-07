@@ -1,0 +1,124 @@
+body{
+    background-color: white;
+}
+
+.pc{
+    position: absolute;
+    top: 60vh;
+    left: 400vw;
+    width: 400px;
+    height: 300px;
+}
+
+.ecran{
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(to right top, #FF00F0 20%, #6b06f0 80%);
+    border-radius: 2px;
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+
+    display: flex;
+    transform: skew(-15deg, 15deg);
+}
+
+.ecran1{
+    position: absolute;
+    left: 1.2px;
+    top: -13.5px; 
+    width: 67px;
+    height: 57px;
+    border-radius: 2px;
+    background-color: #5507ba;
+}
+
+.clavier{
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 81.7px;
+    width: 71px;
+    height: 40px;
+    background: linear-gradient(to right top, #f04fe5 30%, #6c09eecF 70%);
+    border-radius: 2px;
+
+    display: flex;
+    transform: skew(-50deg, 15deg);
+
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+}
+
+.clavier1{
+    position: absolute;
+    left: -3px;
+    top: -16.5px;
+    height: 38px;
+    width: 71px;
+    background: linear-gradient(to right top, #f04fe5 30%, #6c09eecF 70%);
+    border-radius: 2px;
+    border-bottom: 0.1px solid white;
+    border-right: 0.1px solid white;
+}
+
+.clavier2{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 8px;
+    width: 23px;
+    border-radius: 2px;
+    border: 1px solid #6c09eecF;
+}
+
+/*__________________________________________________________________________________________*/
+
+
+.animation{
+    border: 2px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top: 90px;
+    left: 115px;
+    width: 78px;
+    height: 45px;
+    display: flex;
+    transform: skew(-50deg, 15deg);
+    z-index: 0;
+}
+
+.animation1{
+    width: 5px;
+    height: 1px;
+    position: relative;
+    transition: 0.5s ease-out;
+    background-color: white;
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime{
+    0%{width: 15px; height: 2px; background-color: white; top: -18px; left: 0px;}
+    24%{width: 15px; height: 2px; background-color: white; top: -18px; left: 70px;}
+    25%{width: 15px; height: 7px; background-color: white; top: -18px; left: 70px;}
+
+    26%{width: 2px; height: 15px; background-color: white; top: -15px; left: 78px;}
+    49%{width: 2px; height: 15px; background-color: white; top: 21px; left: 78px;}
+    50%{width: 2px; height: 15px; background-color: white; top: 21px; left: 78px;}
+
+    51%{width: 15px; height: 2px; background-color: white; top: 29px; left: 70px;}
+    74%{width: 15px; height: 2px; background-color: white; top: 29px; left: 1px;}
+    75%{width: 15px; height: 2px; background-color: white; top: 29px; left: 1px;}
+
+    76%{width: 2px; height: 15px; background-color: white; top: 21px; left: -1px;}
+   99%{width: 2px; height: 15px; background-color: white; top: -17px; left: -1px;}
+   100%{width: 2px; height: 15px; background-color: white; top: -17px; left: -1px;}
+}
